@@ -3,7 +3,7 @@
 - Just a very simple server providing some dummy posts
 - Sample API format
 - Pagination `/{page_num}`
-
+- Will randomly produce 404 error
 ```
 {
     "meta": {
@@ -105,6 +105,15 @@
         ],
         "has_next": true,
         "next_page": "2"
+    }
+}
+```
+
+## Error format
+```
+{
+    "meta" : {
+        "code": 404
     }
 }
 ```
