@@ -1,21 +1,110 @@
-## Lumen PHP Framework
+## Simple Gag Server
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+- Just a very simple server providing some dummy posts
+- Sample API format
+- Pagination `/{page_num}`
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+```
+{
+    "meta": {
+        "code": 200
+    },
+    "data": {
+        "gags": [
+            {
+                "_id": "11",
+                "height": 1024,
+                "width": 683,
+                "nsfw": "0",
+                "title": "250 pounds of silly putty",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/azbgoQb_700b.jpg"
+            },
+            {
+                "_id": "12",
+                "height": 450,
+                "width": 600,
+                "nsfw": "0",
+                "title": "Pretty awesome cloud formation at Mt. Breckenridge, Colorado",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/a2Nz9Kd_700b.jpg"
+            },
+            {
+                "_id": "13",
+                "height": 845,
+                "width": 634,
+                "nsfw": "0",
+                "title": "Guy at coffee shop came in, drank a coffee, drew this and left",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/amXNO66_700b.jpg"
+            },
+            {
+                "_id": "14",
+                "height": 429,
+                "width": 700,
+                "nsfw": "0",
+                "title": "The Bison committee would like to have a word with you...",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/a9db456_700b.jpg"
+                
+            },
+            {
+                "_id": "15",
+                "height": 464,
+                "width": 700,
+                "nsfw": "0",
+                "title": "Modern Hotel in Singapore",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/azbgvKx_700b.jpg"
+            },
+            {
+                "_id": "16",
+                "height": 933,
+                "width": 700,
+                "nsfw": "0",
+                "title": "My Mom saved the vest I wore on my 1st Birthday 41 years ago... My Son turned 1 on Friday!",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/a8WLv01_700b.jpg"
+            },
+            {
+                "_id": "17",
+                "height": 480,
+                "width": 640,
+                "nsfw": "0",
+                "title": "This landslide on a Washington State highway will likely take weeks to clear.",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/aVOz9Kw_700b.jpg"
+            },
+            {
+                "_id": "18",
+                "height": 800,
+                "width": 600,
+                "nsfw": "0",
+                "title": "This Hotels Pet Policy",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/adN0WQ9_700b.jpg"
+            },
+            {
+                "_id": "19",
+                "height": 447,
+                "width": 700,
+                "nsfw": "0",
+                "title": "A young Jane Goodall",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/a1Av80b_700b.jpg"
+            },
+            {
+                "_id": "20",
+                "height": 393,
+                "width": 700,
+                "nsfw": "0",
+                "title": "Trout jumped and froze to wall in -22 degrees in decorah, IA 2014.",
+                "type": "Photo",
+                "url": "http://stg-img-9gag-fun.9cache.com/photo/awr091x_700b.jpg"
+            }
+        ],
+        "has_next": true,
+        "next_page": "2"
+    }
+}
+```
