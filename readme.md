@@ -4,6 +4,9 @@
 - Sample API format
 - Pagination `/{page_num}`
 - Will randomly produce 404 error
+
+## Sample API format
+
 ```
 {
     "meta": {
