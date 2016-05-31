@@ -15,7 +15,7 @@ class GagController extends Controller
 
     const LIMIT = 10;
 
-    public function show($page)
+    public function show($page = 1)
     {
         $limit = 10;
         $offset = $page * $limit;

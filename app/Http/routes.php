@@ -12,3 +12,4 @@
 */
 
 $app->get('/{page}', 'Gag\GagController@show');
+$app->get('/', 'Gag\GagController@show');
