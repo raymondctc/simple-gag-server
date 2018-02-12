@@ -5,6 +5,16 @@
 - Pagination `/{page_num}`
 - Will randomly produce 404 error
 
+## Setup
+1. Clone this repository
+2. Execute `php composer.phar install`
+3. You may be asked to setup mcrypt on the machine, follow these steps:
+   i.`brew install mcrypt`
+   ii. `brew install homebrew/php/php56-mcrypt` (The number depends on the PHP version that the machine is running, try running php -v to get the version)
+4. Execute `./start.sh` to run 
+5. Go to http://localhost:8000/ and you should see the result
+
+
 ## Sample API format
 
 ```
