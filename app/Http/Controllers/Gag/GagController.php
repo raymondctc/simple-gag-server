@@ -71,6 +71,10 @@ class GagController extends Controller
             $converted['width'] = $gagMedia['image700']['width'];
             $converted['height'] = $gagMedia['image700']['height'];
 
+            if ($converted['type'] == 'Animated') {
+                $converted['videoUrl'] = $gagMedia['image460sv']['url'];
+            }
+
             $converted['nsfw'] = $result->{'NSFW'};
 
             $convertedResults[] = $converted;
